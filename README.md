@@ -1,5 +1,6 @@
 # Finding-3-Digit-Even-Numbers
 Leetcode problem day Question Solve
+
 class Solution {
     public int[] findEvenNumbers(int[] digits) {
         Set<Integer> uniqueNumber = new HashSet<>();
@@ -20,12 +21,10 @@ class Solution {
         }
         List<Integer> resultlist = new ArrayList<>(uniqueNumber);
         Collections.sort(resultlist);
-
         int[] result = new int[resultlist.size()];
         for (int i = 0; i < result.length; i++) {
             result[i] = resultlist.get(i);
         }
-
         return result;
     }
 }
